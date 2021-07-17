@@ -1,15 +1,15 @@
-//This piece of code gives the table a silver border that is 1 pixel wide
+/*This piece of code gives the table a silver border that is 1 pixel wide*/
 
-table{
-	border: 1px solid silver;
+table {
+	border: 5px solid red;
 }
 
 /*This code makes the background
  color of the cells yellow when hovered over*/
 
 td:hover{
-	background-color: yellow;
-	color: black;
+	background-color: silver;
+	color: blue;
 }
 
 /*This piece of code gives the heading a black
@@ -17,13 +17,13 @@ td:hover{
 
 tr, th{
 	background-color: black;
-	color: cornsilk;
+	color: white;
 }
 
 /*This piece of code makes the background
  color of the cells green and the text white*/
  
-tr, td(
-	background-color: green;
-	color: white;
-)
+tr, td{
+	background-color: grey;
+	color: Orange;
+}
