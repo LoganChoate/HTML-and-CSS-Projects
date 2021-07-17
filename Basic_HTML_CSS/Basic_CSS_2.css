@@ -1,3 +1,5 @@
+/*This chunk of code will take all <p> elements
+ and style them as noted below */
 p{
 	color: purple;
 	background: green;
