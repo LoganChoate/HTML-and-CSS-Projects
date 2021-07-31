@@ -1,0 +1,15 @@
+/*=================================
+    CSS FOR ONE_PAGE_WEBSITE.HTML
+===================================*/
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+}
+
+#contact input[type="text"] {
+    width: 50px;
+    margin: auto;
+    border: 5px, blue;
+    border-radius: 2%;
+}
