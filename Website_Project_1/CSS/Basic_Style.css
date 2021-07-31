@@ -70,7 +70,7 @@ h1{
     HOVER EFFECTS
 --------------------------------------------*/
 .container .squares:nth-child(-n+4):hover{
-    background-image: url("..IMAGES/Icons/Smiley_Face_2.png");
+    background-image: url("../IMAGES/Icons/Smiley_Face_2.png");
     transform: scale(.5);
     animation-name: race;
     animation-duration: 2.5s;
@@ -103,7 +103,7 @@ h1{
 @keyframes race {
     0%, 100% {
         transform:translateY(0px);
-        background-image: url("..IMAGES/Icons/Smiley_Face_2.jpg");
+        background-image: url("../IMAGES/Icons/Smiley_Face_2.png");
     }
     50% {
         transform:translateY(330px);
