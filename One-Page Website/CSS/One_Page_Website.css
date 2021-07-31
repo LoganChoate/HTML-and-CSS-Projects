@@ -8,8 +8,8 @@ body {
 }
 
 #contact input[type="text"] {
-    width: 50px;
+    width: 100px;
     margin: auto;
     border: 5px, blue;
-    border-radius: 2%;
+    border-radius: 25%;
 }
