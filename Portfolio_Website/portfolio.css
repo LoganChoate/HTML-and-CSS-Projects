@@ -127,3 +127,66 @@ footer {
     -webkit-animation: moveNavText 5.7s; /*Anmimation for safari 4.0-8.0*/
     animation: moveNavText 5.75s; /*Applies the moveNavText animatrion for 5.75s*/
 }
+
+/*moveNavText animation*/
+@keyframes moveNavText {
+    from {top:-100vw} /*This sets the navbar text 100% above the veiwport*/
+    to {top:0vw} /*This lowers the navbar terxt ontp the navbar*/
+}
+
+/*Screens 576px and smaller will display navbar links equally distributed*/
+@media screen and (max-width: 576px) {
+    .Navbar a{
+        width: 25%; /*This makes each link take up 1/4 of the navbar*/
+        font-size: 12px;
+    }
+}
+
+/*Navbar Hover Effects*/
+.Navbar a:hover {
+    background-color: #f4f4f4; /*Defines the background color that will displatwhen you hover over the link*/
+    color:black; /*This defines the font color that will display when navbar elements are hovered over*/
+    font-weight: bold; /*This makes the text on the navbar bold when hovered over*/
+}
+
+/*Navbar home button*/
+.Navbar a.active {
+    /*This targets the a element on the navbar with the "active" tag*/
+    background-color: darkgray;
+}
+/***************END OF NAVBAR STYLING***************/
+
+/****************VIDEO STYLING**********************/
+/*Formatting for background video*/
+#Typing_Video {
+    position: fixed; /*This ensures there is no space between the edge of the video and the edge of the page*/
+    right:0; /*This ensures there is no space between the bottom of the video and the bottom of the page*/
+    bottom:0; /*This ensures no space between the bottom og the video and the bottom of the page*/
+    min-width:100%; /*This ensures the video is displayed across the full width of the page*/
+    z-index:-1; /*This places the video behind the other elements on the page*/
+}
+
+/*Screens that are 576px and smaller will not display the background video*/
+@media screen and (max-width:576px) {
+    #Typing_Video {
+        display:none;
+    }
+}
+
+/*Texts over video*/
+.Video_Text{
+    background: rgba(0, 0, 0, 0.5); /*This provides a semi transparent background for the text to sit over*/
+    color: white; /*Makes the font color white*/
+    width: 100%; /*Ensures the video container fills the width of the video*/
+    padding: 20px; /*This adds padding arounf the video text container so that the background goes slightly beyond the text*/
+    position: relative; /*This sets the text relative to its normal positioning, allowing us to use the animation below*/
+    -webkit-animation:moveVideoText 5.75s;
+    animation: moveVideoText 5.75s;
+}
+
+/*This animation effect causes the overlay video text to move up from the bottom of the page upon page load*/
+@keyframes moveVideoText {
+    from {top: -100vw;} /*This sets the position of the video text to above the viewport*/
+    to {to:0vw;} /*This moves the video text to the normal positioning on the viewport*/
+}
+/************END OF VIDEO STYLING**********************/
