@@ -4,6 +4,7 @@
 		<title> Comic Books | The Medium</title>
 		<meta charset = "utf-8">
 		<link rel="stylesheet" href="./CSS/One_Page_Website.css">
+		<script src="./JS/one_page_website.js" defer></script>
 	</head>
 	
 	<body>
@@ -113,11 +114,104 @@
 			</section>
 		<!--End Gallery-->
 		
+		<!-- Images used to open the lightbox -->
+		<div class="row">
+			<div class="column">
+			<img src="./IMAGES/Thumbs/Thumbnail_10.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow" width = "500" height = "500" alt = "Hmm, there should be a picture here...">
+			</div>
+			<div class="column">
+			<img src="./IMAGES/Thumbs/Thumbnail_11.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow" width = "500" height = "500" alt = "Hmm, there should be a picture here...">
+			</div>
+			<div class="column">
+			<img src="./IMAGES/Thumbs/Thumbnail_12.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow" width = "500" height = "500" alt = "Hmm, there should be a picture here...">
+			</div>
+			<div class="column">
+			<img src="./IMAGES/Thumbs/Thumbnail_13.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow" width = "500" height = "500" alt = "Hmm, there should be a picture here...">
+			</div>
+			<div class="column">
+			<img src="./IMAGES/Thumbs/Thumbnail_14.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow" width = "500" height = "500" alt = "Hmm, there should be a picture here...">
+			</div>
+			<div class="column">
+			<img src="./IMAGES/Thumbs/Thumbnail_15.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow" width = "500" height = "500" alt = "Hmm, there should be a picture here...">
+			</div>
+		</div>
+  
+		<!-- The Modal/Lightbox -->
+		<div id="myModal" class="modal">
+			<span class="close cursor" onclick="closeModal()">&times;</span>
+			<div class="modal-content">
+		
+				<div class="mySlides">
+					<div class="numbertext">1 / 6</div>
+					<img src="./IMAGES/Thumbs/Thumbnail_10.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">2 / 6</div>
+					<img src="./IMAGES/Thumbs/Thumbnail_11.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">3 / 6</div>
+					<img src="./IMAGES/Thumbs/Thumbnail_12.jpg" style="width:100%">
+				</div>
+			
+				<div class="mySlides">
+					<div class="numbertext">4 / 6</div>
+					<img src="./IMAGES/Thumbs/Thumbnail_13.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">5 / 6</div>
+					<img src="./IMAGES/Thumbs/Thumbnail_14.jpg" style="width:100%">
+				</div>
+
+				<div class="mySlides">
+					<div class="numbertext">6 / 6</div>
+					<img src="./IMAGES/Thumbs/Thumbnail_15.jpg" style="width:100%">
+				</div>
+			
+				<!-- Next/previous controls -->
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
+				<!-- Caption text -->
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+			
+				<!-- Thumbnail image controls -->
+				<div class="column">
+					<img class="demo" src="./IMAGES/Thumbs/Thumbnail_10.jpg" onclick="currentSlide(1)" alt="Nature">
+				</div>
+			
+				<div class="column">
+					<img class="demo" src="./IMAGES/Thumbs/Thumbnail_11.jpg" onclick="currentSlide(2)" alt="Snow">
+				</div>
+			
+				<div class="column">
+					<img class="demo" src="./IMAGES/Thumbs/Thumbnail_12.jpg" onclick="currentSlide(3)" alt="Mountains">
+				</div>
+			
+				<div class="column">
+					<img class="demo" src="./IMAGES/Thumbs/Thumbnail_13.jpg" onclick="currentSlide(4)" alt="Lights">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./IMAGES/Thumbs/Thumbnail_14.jpg" onclick="currentSlide(5)" alt="Lights">
+				</div>
+
+				<div class="column">
+					<img class="demo" src="./IMAGES/Thumbs/Thumbnail_15.jpg" onclick="currentSlide(6)" alt="Lights">
+				</div>
+			</div>
+		</div>	
+
 		<!--Video-->
 			<section>
 				<div id = "vi">
 					<div>
-							<iframe <iframe width="928" height="696" src="https://www.youtube.com/embed/fXYckRgsdjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Scott McCloud - Understanding Comics</iframe>
+							<iframe width="928" height="696" src="https://www.youtube.com/embed/fXYckRgsdjI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Scott McCloud - Understanding Comics</iframe>
 					</div>
 				</div>
 			</section>
