@@ -187,7 +187,8 @@
               </div>
               <div class="modal-body">
                 
-
+                <!--This code defines the fillable forms that will be displayed when
+                the "register to receive move deals button has been pressed."-->
                 <form>
                   <fieldset>
                     <label for="firstname">First Name:</label>
@@ -205,10 +206,38 @@
                     <label for="password">password:</label>
                     <input type="text" class="form-control" id="password" placeholder="Password...">
                   </fieldset>
+
+                  <!--This code expands on the above form  and adds radio button features-->
+                  <fieldset class="form-group">
+                    <div class="row">
+                      <legend class="col-form-label col-sm-2 pt-0">Seating Options</legend>
+                      <div class="col-sm-10">
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                          <label class="form-check-label" for="gridRadios1">
+                            Handicapped
+                          </label>
+                        </div>
+                        <div class="form-check">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                          <label class="form-check-label" for="gridRadios2">
+                            Economy
+                          </label>
+                        </div>
+                        <div class="form-check disabled">
+                          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                          <label class="form-check-label" for="gridRadios3">
+                            Luxury - sold out
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </fieldset>
                 </form>
 
 
               </div>
+              <!--This code defines the footer of the form and how it will be displayed-->
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary">Save changes</button>
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
